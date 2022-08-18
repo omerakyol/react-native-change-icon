@@ -102,8 +102,7 @@ public class ChangeIconModule extends ReactContextBaseJavaModule implements Appl
     }
 
     @Override
-    public void onActivityPaused(Activity activity) {
-        completeIconChange();
+    public void onActivityPaused(Activity activity) { 
     }
 
     @Override
@@ -120,6 +119,7 @@ public class ChangeIconModule extends ReactContextBaseJavaModule implements Appl
 
     @Override
     public void onActivityStopped(Activity activity) {
+        completeIconChange();
     }
 
     @Override
